@@ -1,0 +1,116 @@
+body {
+    margin : 0;
+    padding: 0;
+}
+
+html{
+    background: url(Images/background.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 100% 50%;
+}
+header{
+    background-color: rgba(0,0,255,0.75);
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    float: right;
+    text-align: center;
+    padding:1px;
+    margin:10px;
+    border:1px solid black;
+    background-color : orange;
+    color: white;
+}
+
+.left{float: left;}
+.right{float: right;}
+.logo{
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 70px;
+    font-weight: 800;
+}
+#canvas2{
+    display: none;
+}
+img{
+    height:90px;
+    width: 100px;
+    border:2px solid black;
+    padding:1px;
+    margin:3px;
+    box-shadow: 0 0 17px #BBB;
+
+    }
+.container{
+    width: auto;
+    margin: auto;
+    height: 100px;
+    
+}
+.menu{
+    padding: 0;margin: 0;
+}
+.menu .title{
+    display: inline-block;
+    float: left;
+    position: relative;
+    padding: 23px 10px;
+    transition: 0.5s;
+}
+.menu .title a{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+}
+.menu .title:hover{
+    background-color: orange;
+}
+.menu .sous_menu{
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    height: 0;
+    top: 70px;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: 50% 0;
+    transition: transform 1s ease;
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0,0,255,0.15);
+    border: 1px solid rgba(0,0,255,0.15);
+    border-radius: 0 0 5px 5px
+}
+.menu .title:hover .sous_menu {
+    visibility: visible;
+    height: auto;
+    transform: scaleY(1);
+}
+.menu .sous_menu li {
+    padding: 0;
+    display: inline-block;
+    color: #000;
+    float: left;
+    width: 150px;
+    margin-left: -40px;
+    padding: 5px;
+    transition: 0.2s
+}
+.menu .sous_menu li a {
+    text-transform: none;
+    color: green;
+    font-weight: normal;
+    font-size: 14px;
+}
+.menu .sous_menu li:hover {
+    background-color: white;
+    border-left: 3px solid #3498db;
+}
