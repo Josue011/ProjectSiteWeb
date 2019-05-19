@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="fr-FR">
+    <head>
+        <meta charset="utf-8"/>
+        <title>AUBE</title>
+        <link rel="stylesheet" href="_style.css" />
+        <script src="_java.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>MAINTENANT LA COTE D'IVOIRE</h1>
+            <div class='container'>
+                <div class='left'>
+                    <div class='logo'>
+                        <img id='image' src='Images/Logo.jpg' alt=''>
+                    </div>
+                </div>
+                <div class='right'>
+                    <ul class='menu'>
+                        <li class='title'>
+                            <a href='#'>
+                                accueil
+                                <i class='fa fa-angle-down'></i>
+                            </a>
+                            <ul class='sous_menu'>
+                                <li><a href="">A propos de nous</a></li>
+                                <li><a href="">Nous contacter</a></li>
+                            </ul>
+                        </li>
+                        <li class='title'>
+                            <a href='#'>
+                                rubriques
+                                <i class='fa fa-angle-down'></i>
+                            </a>
+                            <ul class='sous_menu'>
+                                <li><a href="">Education</a></li>
+                                <li><a href="">Le livre du mois</a></li>
+                                <li><a href="">Point gouvernement</a></li>
+                                <li><a href="">Actualité</a></li>
+                                <li><a href="">Histoire Africaine</a></li>
+                            </ul>
+                        </li>
+                        <li class='title'>
+                            <a href='#'>
+                                Connexion
+                                <i class='fa fa-angle-down'></i>
+                            </a>
+                            <ul class='sous_menu'>
+                                <li><a href="">Je me connecte</a></li>
+                                <li><a href="">Je m'inscrit</a></li>
+                            </ul>
+                        </li>
+                        <li class='title'>
+                            <a href='#'>
+                                Projets
+                                <i class='fa fa-angle-down'></i>
+                            </a>
+                            <ul class='sous_menu'>
+                                <li><a href="">Education</a></li>
+                                <li><a href="">Société</a></li>
+                                <li><a href="">Politique</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <canvas id='canvas2' width='550' height='1200'></canvas>
+        <script>
+        var canvas = document.getElementById('canvas2');
+        var contexte = canvas.getContext('2d');
+        var image = document.getElementById('image');
+        image.addEventListener('load', affiche);
+        function affiche(){
+            contexte.drawImage(image,0,0,250,100);
+        }
+        </script>
+    </body>
+</html>
